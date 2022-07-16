@@ -73,12 +73,14 @@ body{
 }
 
 header{
+   
     display: flex;
     justify-content: center;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
     height: 120px;
+
 
 
     border-bottom: #30292a 1px solid;
@@ -89,6 +91,7 @@ header{
     width: 180px;
     height: 82px;
     display:inline-block
+    
     
 
 
@@ -115,9 +118,41 @@ header{
 
     
 }
+
+.nav-text-ul{
+    display: none;
+    position: absolute;
+    background-color: #201617;
+    border:#54f083 1px solid;
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+    transition: 0.5s ease;
+    
+}
+
+.nav-text-a{
+    padding: 8px 14px;
+
+    
+}
+
+.nav-text-a:hover{
+    background-color:#412f31
+}
+
+.dropdown:hover .nav-text-ul{
+    display: block;
+}
+
+.nav-text-li{
+    width: 180px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
 li{
 
-    wi
+    
 }
 
 .nav-container2{
@@ -239,9 +274,17 @@ a{
     width: 100%;
     margin: 5px;
 }
-
+/* Main */
+main{
+    margin-top: 120px;
+}
 /* Para Celulares */
 @media (max-width: 1045px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
     .logo-container{
         
     }
@@ -259,6 +302,8 @@ a{
         right: 0;
         
     }
+
+
     .nav-container3 {
         justify-content: end;
         margin-left: 0px;
@@ -271,10 +316,11 @@ a{
     .menu-toggle{
         display:block;
         
+        
 
     }
     .menu-toggle-container{
-        display:block;
+        display:flex;
  
         
     }
@@ -305,7 +351,36 @@ a{
         height: 40px;
         border-radius: 20px 20px 20px 20px;
     }
+    .nav-list{
+        display: flex;
+        position: absolute;
+        top: 12vh;
+        right: 0;
+        width: 50vw;
+        height: 82vh;
+        background-color: #201617;
 
+        flex-direction: column;
+        border: #54f083 1px solid;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: 0.5s ease;
+    }
+    .active{
+        transform: translateX(0%);
+    }
+
+    .nav-text-li{
+        margin-left: 0;
+
+        
+    }
+
+    .nav-text-ul{
+        border: none;
+
+    
+    }
 
     
 }
