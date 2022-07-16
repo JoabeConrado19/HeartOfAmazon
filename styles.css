@@ -240,9 +240,10 @@ a{
     margin: 5px;
 }
 
+/* Para Celulares */
 @media (max-width: 1045px) {
     .logo-container{
-        width: 100%;
+        
     }
 
     .nav-container {
@@ -251,9 +252,9 @@ a{
     }
     .nav-container2 {
         
-        width: 80%;
+        width: 100%;
         margin-left: 10px;
-        margin-right: 50px;
+        margin-right: 15px;
         justify-content: end;
         right: 0;
         
@@ -262,7 +263,7 @@ a{
         justify-content: end;
         margin-left: 0px;
         margin-right: 29px;
-        width: 100%;
+
         right: 0;
         
     }
@@ -280,9 +281,10 @@ a{
 
     .input{
         display: flex;
-        width:90px;
         height: 40px;
         border-radius: 20px;
+        min-width: 80px;
+        width: 100%;
     }
 
     .logo{
