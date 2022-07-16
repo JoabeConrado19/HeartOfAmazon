@@ -250,7 +250,8 @@ a{
         
     }
     .nav-container2 {
-        width: 100%;
+        display: none;
+        width: 80%;
         margin-left: 30px;
         justify-content: end;
         right: 0;
@@ -258,7 +259,7 @@ a{
     }
     .nav-container3 {
         justify-content: end;
-        margin-left: 10px;
+        margin-left: 0px;
         width: 100%;
         right: 0;
         
