@@ -250,9 +250,10 @@ a{
         
     }
     .nav-container2 {
-        display: none;
+        
         width: 80%;
-        margin-left: 30px;
+        margin-left: 10px;
+        margin-right: 50px;
         justify-content: end;
         right: 0;
         
@@ -260,6 +261,7 @@ a{
     .nav-container3 {
         justify-content: end;
         margin-left: 0px;
+        margin-right: 29px;
         width: 100%;
         right: 0;
         
@@ -272,6 +274,7 @@ a{
     }
     .menu-toggle-container{
         display:block;
+ 
         
     }
 
