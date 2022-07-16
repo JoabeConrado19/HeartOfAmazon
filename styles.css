@@ -1,0 +1,276 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Reset CSS */
+
+
+* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 500%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Header */
+
+.logo {
+    width: 180px;
+}
+
+body{
+    background-color: #201617;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.nav-text{
+    color: #54f083;
+}
+
+.fa-shopping-cart{
+    color: #54f083;
+
+}
+
+.fa-heart-o{
+    color: #54f083;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 120px;
+
+
+    border-bottom: #30292a 1px solid;
+
+}
+
+.logo-container{
+    width: 180px;
+    height: 82px;
+    display:inline-block
+    
+
+
+
+}
+
+.logo{
+    margin-top: 14px;
+    margin-right: 0;
+    
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 0 5px 0 5px;
+
+
+    
+    font-size: 16px;
+    font-weight: 800;
+
+    
+}
+li{
+
+    wi
+}
+
+.nav-container2{
+    display: flex;
+
+
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin-right: 20px;
+
+
+    
+    
+}
+
+.nav-container3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+
+
+
+    
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: #54f083;
+
+}
+
+.links{
+    margin: 0px 10px 0px 10px;
+
+}
+
+.favorite-cart-container{
+    display: flex;
+    justify-content: end;
+    border: 1px solid green;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    
+    
+}
+
+.flex-end{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.search-bar-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+
+
+}
+
+
+.fa-heart-o{
+    margin-left: 20px;
+
+}
+
+
+
+
+.inputs{
+    
+}
+
+.input{
+    display: flex;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.search-icon{
+    margin-top: 3px;
+    width: 50px;
+    height: 40px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.menu-toggle-container{
+    display: none;
+
+    align-items: center;
+    width: 100%;
+}
+
+.menu-toggle{
+    display: none;
+    position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        margin-top: 40px;
+        margin-right: 20px;
+
+   
+
+
+}
+
+.home-toggle, .categorias-toggle, .destaques-toggle, .sobre-toggle{
+    background-color:white;
+    height: 5px;
+    width: 100%;
+    margin: 5px;
+}
+
+@media (max-width: 1045px) {
+    .logo-container{
+        width: 100%;
+    }
+
+    .nav-container {
+        display: none;
+        
+    }
+    .nav-container2 {
+        width: 100%;
+        margin-left: 30px;
+        justify-content: end;
+        
+    }
+    .nav-container3 {
+        justify-content: end;
+        margin-left: 10px;
+        width: 100%;
+        
+    }
+
+    .menu-toggle{
+        display:block;
+        
+
+    }
+    .menu-toggle-container{
+        display:block;
+        
+
+    }
+    
+}
