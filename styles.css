@@ -307,7 +307,7 @@ main{
     .nav-container3 {
         justify-content: end;
         margin-left: 0px;
-        margin-right: 29px;
+        margin-right: 38px;
 
         right: 0;
         
@@ -368,10 +368,14 @@ main{
     }
     .active{
         transform: translateX(0%);
+ 
     }
 
     .nav-text-li{
         margin-left: 0;
+
+
+
 
         
     }
@@ -379,12 +383,81 @@ main{
     .nav-text-ul{
         border: none;
 
+
+
     
     }
 
     .dropdown{
         display: block;
+
+
     }
 
     
 }
+
+/* Main */
+/* Slider */
+
+.container-fluid{
+    padding: 0;
+    margin-top: -100px;
+    width: 90%;
+    
+   
+
+}
+.carousel{
+    
+    
+
+
+}
+
+
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item{
+    
+
+
+
+}
+
+#mainSlider .carousel-caption{
+    top: 30%;
+}
+
+#mainSlider .carousel-caption h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+}
+
+#mainSlider .carousel-caption p{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 100px;
+    color: rgb(0, 0, 0);
+}
+
+#main-btn{
+    background-color: #54f083;
+    color: white;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: 0.5s;
+}
+
+#main-btn:hover{
+    text-decoration: none;
+    color:#54f083;
+    background-color: transparent;
+    border-color: #54f083;
+}
+
+
