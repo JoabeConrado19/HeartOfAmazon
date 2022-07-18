@@ -473,119 +473,182 @@ main{
 
 .section-container{
     background-color: #524d4d3b;
+
+
+}
+
+.product-section{
+    border-top: #54f083 2px solid;
+    border-bottom:#54f083 2px solid;
+    height: auto;
+    width: 100%;
+
 }
 
 .card-container{
-    overflow-x: auto;
+    border-top: #54f083 2px solid;
+    background-color: #312b2b;
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    border: #54f083 1px solid;
+    height: auto;
+    flex-wrap: wrap;
+
 }
 
+.product-filter{
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    margin-left: 20px;
+
+    height: 30px;
+    width: 100%;
+}
+
+.product-filter a:nth-child(2){
+margin: 0px 0px 0px 10px;
+}
+
+.product-filter a:nth-child(3){
+    margin: 0px 60px 0px 10px;
+    }
+
+.product-filter p{
+color: #54f083;
+    }
+    
 .product-card{
-    width: 13rem;
-    height: 26rem;
+    border-radius: 5px;
+    margin: 20px;
+    
+    height: 372px;
+    width: 250px;
+}
 
-    box-shadow: 0 2px 7px #dfdfdf;
-    margin: 50px auto;
-    background: #f0f0f0;
-    border: #fbb72d 1px solid;
+.product-img-container{
+    background-color: white;
+    border-bottom: #a3a0a0fd 1px solid;
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 46%;
+    display: flex;
+}
 
+.no-badge{
+    position: absolute;
+    font-size: 0px;
+    
+
+}
+
+.product-img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.product-imgAuto{
+    width: 100%;
+    height: auto;
     
 }
 
-.product-img img, .product-img{
-    width: 13rem;
-    height: 11rem;
-
-    
-    justify-content: center;
-    align-items: center;
+.product-img2{
+    width: 80%;
+    height: auto;
+    margin: auto;
 }
 
-.product-details{
-    padding: 30px;
-
-    background-color: #fafafa;
-    
-    
+.product-img3{
+    width: 60%;
+    height: auto;
+    margin: auto;
 }
 
-.product-details h4{
- margin: 15px 0px 15px 0px;
- font-size: 1rem;
+.product-img4{
+    width: 40%;
+    height: auto;
+    margin: auto;
 }
-
-.product-details a{
-    text-decoration: none;
-    color:#54f083;
-    font-weight: 800;
-   }
-
-.product-details p{
-    margin-bottom: 15px;
-    font-size: 1rem;
+.product-img5{
+    width: 20%;
+    height: auto;
+    margin: auto;
 }
 
 .badge{
-    border: red 1px solid;
-    color: white;
+    font-size: 14px;
+    position: absolute;
+    margin-top: 10px;
     background-color: red;
-    border-radius: 0px;
-    margin-top: 15px;
-    font-size: 10%;
+    color: white;
+    padding: 5px;
+}
+
+.product-details-container{
+    background-color: white;
+    padding: 20px;
+    height: 54%;
+    border-radius: 0px 0px 5px 5px;
+
+}
+
+.product-details-container h2{
+    margin-top: 10px;
+    color: #54f083;
     font-weight: 700;
 }
 
-.product-catagory{
-    color: #cdcdcd;
-    font-weight: 600;
-    
+.category{
+    color: #cccccc;
+    margin-bottom: 20px;
 }
 
-.product-img img, .product-img{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.product-p{
+    margin-top: 10px;
 }
 
-
-.product-bottom-details{
-    display: flex;
-    color: #fbb72d;
-
+.stars-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.product-bottom-details span{
-    font-size: 0.8rem;
-    text-decoration: line-through;
-    margin-right: 8px;
-
+.fa-star{
+    color: #fbb72c
 }
 
 .product-price{
-    font-weight: 800;
-    margin-right: 60px;
-    font-size: 1rem;
-}
-
-.product-ico{
-    color: #cdcdcd;
-    
-}
-
-.product-ico1{
-    color: #cdcdcd;
-    margin-right: 6px;
-    
-}
-
-.product-star{
     display: flex;
-    color: #fbb72d;
-    margin-bottom: 15px;
-    
+    margin-top: 20px;
 }
+
+.product-price span{
+margin-right: 6px;
+margin-top: 2px;
+font-size: 14px;
+color: #fbb72c;
+text-decoration: line-through;
+}
+
+.product-price p{
+    color: #fbb72c;
+    font-weight: 800;
+
+    }
+
+    .product-cart{
+        color:#cccccc;
+        margin: 0px 15px 0px 20px;
+        cursor: pointer;
+    }
+
+    .product-heart{
+        color:#cccccc;
+        cursor: pointer;
+
+    }
+
+
