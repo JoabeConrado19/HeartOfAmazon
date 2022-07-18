@@ -478,18 +478,31 @@ main{
 .card-container{
     overflow-x: auto;
     display: flex;
+    width: 100%;
     justify-content: center;
-    width: auto;
-    height: auto;
+    align-items: center;
+    border: #54f083 1px solid;
 }
 
 .product-card{
-    width: 293px;
-    position: relative;
+    width: 13rem;
+    height: 26rem;
+
     box-shadow: 0 2px 7px #dfdfdf;
     margin: 50px auto;
     background: #f0f0f0;
+    border: #fbb72d 1px solid;
+
     
+}
+
+.product-img img, .product-img{
+    width: 13rem;
+    height: 11rem;
+
+    
+    justify-content: center;
+    align-items: center;
 }
 
 .product-details{
@@ -502,6 +515,7 @@ main{
 
 .product-details h4{
  margin: 15px 0px 15px 0px;
+ font-size: 1rem;
 }
 
 .product-details a{
@@ -512,6 +526,7 @@ main{
 
 .product-details p{
     margin-bottom: 15px;
+    font-size: 1rem;
 }
 
 .badge{
@@ -520,7 +535,7 @@ main{
     background-color: red;
     border-radius: 0px;
     margin-top: 15px;
-    font-size: 15px;
+    font-size: 10%;
     font-weight: 700;
 }
 
@@ -545,7 +560,7 @@ main{
 }
 
 .product-bottom-details span{
-    font-size: 12px;
+    font-size: 0.8rem;
     text-decoration: line-through;
     margin-right: 8px;
 
@@ -554,6 +569,7 @@ main{
 .product-price{
     font-weight: 800;
     margin-right: 60px;
+    font-size: 1rem;
 }
 
 .product-ico{
