@@ -158,43 +158,35 @@ for(let i = 0; i< products.length; i++){
     div2.appendChild(div4)
     let span4 = document.createElement("span")
     span4.innerText ="R$"+`${products[i].precoSemDesconto}`
-    div4.appendChild(span4)
+    if(products[i].precoSemDesconto > 0){
+    div4.appendChild(span4)}
     let p2 = document.createElement("p")
-    p2.innerText = "R$"+`${products[i].precoSemDesconto}`
+    p2.innerText = "R$"+`${products[i].precoAtual}`
     div4.appendChild(p2)
     let iShop = document.createElement("i")
     iShop.classList.add("fa")
     iShop.classList.add("fa-shopping-cart")
+    iShop.id = `${products[i].id}`
     iShop.classList.add("product-cart")
     div4.appendChild(iShop)
     let iHeart = document.createElement("i")
     iHeart.classList.add("fa")
     iHeart.classList.add("fa-heart")
     iHeart.classList.add("product-heart")
+    iHeart.id = `${products[i].id}`
     div4.appendChild(iHeart)
 
 
 
     }
 
+    // Coração mudar de cor no click
+    let addHeart = document.querySelectorAll(".product-heart")
+    for(let i = 0; addHeart.length; i++){
+        function click (){     
+       addHeart[i].classList.toggle("product-heart-active")
+        }
+        addHeart[i].addEventListener("click", click)
+    }
+    
 
-/* 
-<div class="product-details-container">
-    <span class="category">Category</span>
-    <h2>Rede Branca Grande</h2>
-    <p class="product-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, recusandae?</p>
-    <div class="stars-container">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-    </div>
-    <div class="product-price">
-    <span>R$96.00</span>
-    <p>R$230.99</p>
-    <i class="fa fa-shopping-cart product-cart"></i>
-    <i class="fa fa-heart product-heart"></i>
-     </div>
-</div>
-</li> */
