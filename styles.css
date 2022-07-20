@@ -374,7 +374,8 @@ main{
         background-color: #201617;
 
         flex-direction: column;
-        border: #54f083 1px solid;
+        border: #54f083 2px solid;
+        border-radius: 30px 0 30px 30px; 
         justify-content: space-around;
         transform: translateX(400%);
         transition: 0.5s ease;
@@ -687,15 +688,16 @@ text-decoration: line-through;
         top: 12vh;
         right: 0;
         margin-right: 130px;
-        margin-left: 50px;
+        margin-left: 70px;
         width: 40vw;
-        min-width: 370px;
+        min-width: 350px;
         height: auto;
         background-color: #201617;
         border-radius: 30px 0 30px 30px;      
         border: #54f083 2px solid;
         transform: translateX(600%);
         transition: 0.5s ease;
+        
     }
 
     .shoppingCartActive {
