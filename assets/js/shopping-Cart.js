@@ -1,5 +1,7 @@
 let addCart = document.querySelectorAll(".product-cart")
 let ul = document.querySelector(".CartProductContainer")
+let valorTotal = 0
+
 
 
 
@@ -17,7 +19,10 @@ for(let i = 0; addCart.length; i++){
     
         
         if(addCart[i].id == `${i}` && TemClasse(addCart[i], "product-cart-active") == false){
- 
+            
+            let valorCarrinho = document.querySelector(".CartPrice")
+            valorTotal += products[i].precoAtual
+            valorCarrinho.innerText ="R$:"+ valorTotal
             let qnt = 1
             let li = document.createElement("li")
             li.id = products[i].id
@@ -61,31 +66,59 @@ for(let i = 0; addCart.length; i++){
             div3.appendChild(span)
             div3.appendChild(i2)
             addCart[i].classList.add("product-cart-active")
+            
+
+            
+
+             
 
             i1.addEventListener("click", subtrair)
             function subtrair (){qnt = qnt-1
+            products[i].quantidade -= 1
             span.innerText ="Quantidade: "+ `${qnt}`
             p.innerText = "R$"+`${products[i].precoAtual*qnt}`
+            valorTotal -= products[i].precoAtual
+            valorCarrinho.innerText ="R$:"+ valorTotal
         }
-            i2.addEventListener("click", somar)
-            function somar (){qnt = qnt+1
-            span.innerText ="Quantidade: "+ `${qnt}`
-            p.innerText = "R$"+`${products[i].precoAtual*qnt}`
-            let spanTotal = document.querySelector(".shopping-circle")
-            qntTotal = qntTotal-2+qnt
-            spanTotal.innerText = `${qntTotal+qnt}`}
-            p.innerText = "R$"+`${products[i].precoAtual*qnt}`
-            
+        i2.addEventListener("click", somar)
+        function somar (){qnt = qnt+1
+            products[i].quantidade += 1
+        valorTotal += products[i].precoAtual
+        valorCarrinho.innerText ="R$:"+ valorTotal
+        span.innerText ="Quantidade: "+ `${qnt}`
+        p.innerText = "R$"+`${products[i].precoAtual*qnt}`
+        spanTotal.innerText = `${qntTotal+qnt}`
 
-                
-        }
+        
+
+        
+    
+    }
+        p.innerText = "R$"+`${products[i].precoAtual*qnt}`
+
+        
+        
+
+            
+    }
 
         
 
         else if(addCart[i].id == `${i}` && TemClasse(addCart[i], "product-cart-active") == true){
+            let valorCarrinho = document.querySelector(".CartPrice")
+            valorTotal -= products[i].precoAtual*products[i].quantidade
+            valorCarrinho.innerText ="R$:"+ valorTotal
             let li2 = document.getElementById(`${addCart[i].id}`)
             addCart[i].classList.remove("product-cart-active")
             ul.removeChild(li2)
+
+        
+
+            
+
+
+            
+
 
             
 
@@ -100,3 +133,6 @@ for(let i = 0; addCart.length; i++){
 
 
 
+function total(){
+    
+}

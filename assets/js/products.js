@@ -1,5 +1,6 @@
 const products = [
     {   id: 0,
+        quantidade: 1,
         nome: "Colar de fio de poliester e brinco da amazônia",
         precoAtual: 89.00,
         precoSemDesconto: 165.95,
@@ -13,6 +14,7 @@ const products = [
     },
 
     {   id: 1,
+        quantidade: 1,
         nome: "colar e pulseira colorida em sementes de açaí",
         precoAtual: 69.00,
         precoSemDesconto: 99.50,
@@ -26,6 +28,7 @@ const products = [
     },
 
     {   id: 2,
+        quantidade: 1,
         nome: "kit de colares flor de fio",
         precoAtual: 69.00,
         precoSemDesconto: 0,
@@ -39,6 +42,7 @@ const products = [
     },
 
     {   id: 3,
+        quantidade: 1,
         nome: "Colares e pulseira em madeira e sementes da amazônia",
         precoAtual: 69.00,
         precoSemDesconto: 99.00,
@@ -52,6 +56,7 @@ const products = [
     },
 
     {   id: 4,
+        quantidade: 1,
         nome: "Jogo de colar de fio de poliester",
         precoAtual: 89.00,
         precoSemDesconto: 165.90,
@@ -65,6 +70,7 @@ const products = [
     },
 
     {   id: 5,
+        quantidade: 1,
         nome: "Conjunto de colar E pulseira",
         precoAtual: 69.00,
         precoSemDesconto: 0,
@@ -78,6 +84,7 @@ const products = [
     },
 
     {   id: 6,
+        quantidade: 1,
         nome: "Óculos de sol em madeira da amazônia",
         precoAtual: 205.90,
         precoSemDesconto: 0,
@@ -91,6 +98,7 @@ const products = [
     },
 
     {   id: 7,
+        quantidade: 1,
         nome: "bolsa de praia de palha de tucumã",
         precoAtual: 152.90,
         precoSemDesconto: 0,
@@ -104,6 +112,7 @@ const products = [
     },
 
     {   id: 8,
+        quantidade: 1,
         nome: "boneca em tecido fruta (castanha) da amazônia",
         precoAtual: 159.00,
         precoSemDesconto: 0,
@@ -117,6 +126,7 @@ const products = [
     },
 
     {   id: 9,
+        quantidade: 1,
         nome: "Chopó redondo de palha de tucumã",
         precoAtual: 112.00,
         precoSemDesconto: 0,
@@ -130,6 +140,7 @@ const products = [
     },
 
     {   id: 10,
+        quantidade: 1,
         nome: "Mandala em fibra de bacaba da amazônia",
         precoAtual: 109.00,
         precoSemDesconto: 0,
@@ -143,6 +154,7 @@ const products = [
     },
 
     {   id: 11,
+        quantidade: 1,
         nome: "Jogo americano amarelo com grafismo indígena",
         precoAtual: 94.00,
         precoSemDesconto: 99.00,
@@ -156,6 +168,7 @@ const products = [
     },
 
     {   id: 12,
+        quantidade: 1,
         nome: "Jogo americano amarelo com grafismo",
         precoAtual: 199.00,
         precoSemDesconto: 0,
@@ -170,6 +183,7 @@ const products = [
 
 
     {   id: 13,
+        quantidade: 1,
         nome: "boto da amazônia em resíduo de madeira",
         precoAtual: 105.00,
         precoSemDesconto: 109.00,
@@ -183,6 +197,7 @@ const products = [
     },
 
     {   id: 14,
+        quantidade: 1,
         nome: "Bandeja em resíduo de madeira saboarana",
         precoAtual: 799.00,
         precoSemDesconto: 0,
@@ -196,6 +211,7 @@ const products = [
     },
 
     {   id: 15,
+        quantidade: 1,
         nome: "rede balanço do rio negro - modelo 3",
         precoAtual: 186.00,
         precoSemDesconto: 0,
@@ -209,6 +225,7 @@ const products = [
     },
 
     {   id: 16,
+        quantidade: 1,
         nome: "rede balanço do rio negro - modelo 5",
         precoAtual: 184.00,
         precoSemDesconto: 0,
@@ -222,6 +239,7 @@ const products = [
     },
 
     {   id: 17,
+        quantidade: 1,
         nome: "rede balanço do rio negro - modelo 1",
         precoAtual: 182.00,
         precoSemDesconto: 0,
@@ -235,6 +253,7 @@ const products = [
     },
 
     {   id: 18,
+        quantidade: 1,
         nome: "rede balanço do rio negro - modelo 2",
         precoAtual: 183.00,
         precoSemDesconto: 0,
@@ -248,6 +267,7 @@ const products = [
     },
 
     {   id: 19,
+        quantidade: 1,
         nome: "rede balanço do rio negro - modelo 4",
         precoAtual: 185.00,
         precoSemDesconto: 0,
@@ -261,6 +281,7 @@ const products = [
     },
 
     {   id: 20,
+        quantidade: 1,
         nome: "CHÁ + IMUNE IN NATURA 150g",
         precoAtual: 30.00,
         precoSemDesconto: 0,
@@ -274,6 +295,7 @@ const products = [
     },
 
     {   id: 21,
+        quantidade: 1,
         nome: "GEL PARA MASSAGEM CAAPEBA",
         precoAtual: 32.20,
         precoSemDesconto: 0,
@@ -287,6 +309,7 @@ const products = [
     },
 
     {   id: 22,
+        quantidade: 1,
         nome: "KIT FACIAL CLAREADOR DE MULATEIRO",
         precoAtual: 79.90,
         precoSemDesconto: 0,
@@ -300,6 +323,7 @@ const products = [
     },
 
     {   id: 23,
+        quantidade: 1,
         nome: "KIT BAMBU MINI - 08 Sabonetes",
         precoAtual: 22.00,
         precoSemDesconto: 0,
@@ -313,6 +337,7 @@ const products = [
     },
 
     {   id: 24,
+        quantidade: 1,
         nome: "KIT BAMBU MIX",
         precoAtual: 59.80,
         precoSemDesconto: 0,

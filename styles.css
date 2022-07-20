@@ -733,6 +733,18 @@ text-decoration: line-through;
         display: flex;
     }
 
+    .CartPrice{
+        color: #54f083;
+        text-align: end;
+        
+    }
+
+    .CartPriceText{
+        color: #54f083;
+        text-align: end;
+        width: 100%;
+
+    }
     .CartProductContainer{
 
         
