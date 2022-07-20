@@ -32,7 +32,9 @@ let sectionProdutosNaturais = document.getElementsByClassName('produtosNaturais'
 let sectionRedes = document.getElementsByClassName('redes')[0]
 let sectionLicores = document.getElementsByClassName('licores')[0]
 let sectionOutros = document.getElementsByClassName('outros')[0]
+let sectionPesquisa = document.getElementsByClassName('pesquisa')[0]
 
+function listarProdutos(products){
 for(let i = 0; i< products.length; i++){
 
         let li = document.createElement("li")
@@ -47,6 +49,8 @@ for(let i = 0; i< products.length; i++){
         sectionRedes.appendChild(li)}
         else if(products[i].section == "Licores"){
         sectionLicores.appendChild(li)}
+        else if(products[i].section == "pesquisa"){
+            sectionPesquisa.appendChild(li)}
         else{
         sectionOutros.appendChild(li)
         }
@@ -176,9 +180,12 @@ for(let i = 0; i< products.length; i++){
     iHeart.id = `${products[i].id}`
     div4.appendChild(iHeart)
 
+    }
 
+    
 
     }
+    listarProdutos(products)
 
     // Coração mudar de cor no click
     let addHeart = document.querySelectorAll(".product-heart")
